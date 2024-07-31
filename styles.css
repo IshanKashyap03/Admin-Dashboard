@@ -26,10 +26,47 @@
     background-color: blue;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.sidebar-header{
+   grid-row: 1 / 2;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 15px;
+}
+
+.sidebar-header > i{
+    padding-right: 10px;
+}
+
+.list-items{
+    grid-row: 2 / 4;
+}
+
+.bottom-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-list{
+    display: flex;
+    flex-direction: column;
 }
 
 li{
     list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+
+}
+
+li > i{
+    padding-right: 10px;
 }
 
 .content{
