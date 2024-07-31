@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: center;
+}
+
+.container div {
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+  }
+
+.header{
+    background-color: #393f4d;
+    grid-column: 2 / 3;
+}
+
+.sidebar{
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+li{
+    list-style: none;
+}
+
+.content{
+    background-color: purple;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+}
